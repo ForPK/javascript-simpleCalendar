@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Simple Calendar</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      ul,
+      li {
+        list-style: none;
+      }
+
+      #content {
+        padding-top: 20px;
+      }
+
+      #day-wrap {
+        display: flex;
+        flex-flow: row wrap;
+      }
+
+      #day-wrap li {
+        flex-basis: 14.28%;
+        height: 50px;
+        background: #d1b2ff;
+        box-sizing: border-box;
+        padding: 5px;
+        margin: 5px 0;
+      }
+    </style>
+    <script defer src="simpleCalendar.js"></script>
+  </head>
+  <body>
+    <h2>Live output</h2>
+    <div class="output>
+    <label for="choice-month">Select month: </label>
+    <select id="choice-month">
+      <option value="선택하세요">선택하세요</option>
+      <option value="January">January</option>
+      <option value="February">February</option>
+      <option value="March">March</option>
+      <option value="April">April</option>
+      <option value="May">May</option>
+      <option value="June">June</option>
+      <option value="July">July</option>
+      <option value="August">August</option>
+      <option value="September">September</option>
+      <option value="October">October</option>
+      <option value="November">November</option>
+      <option value="December">December</option>
+    </select>
+    <div id="content">
+      <h1 id="month"></h1>
+      <ul id="day-wrap"></ul>
+    </div>
+  </body>
+</html>
