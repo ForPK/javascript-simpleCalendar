@@ -6,13 +6,13 @@ function init() {
   const dayWrap = document.getElementById("day-wrap");
   let day = 0;
   function createDay(selectvalue) {
-    if (selectvalue == "February") {
+    if (selectvalue === "February") {
       day = 28;
     } else if (
-      selectvalue == "April" ||
-      selectvalue == "June" ||
-      selectvalue == "September" ||
-      selectvalue == "November"
+      selectvalue === "April" ||
+      selectvalue === "June" ||
+      selectvalue === "September" ||
+      selectvalue === "November"
     ) {
       day = 30;
     } else if (selectvalue === select.options[0].value) {
